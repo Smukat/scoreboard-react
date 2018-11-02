@@ -1,26 +1,90 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Header from './components/Header';
+import Player  from './components/Player';
+import AddPlayerForm from './components/AddPlayerForm';
+
 import './App.css';
 
+
+
+
 class App extends Component {
+  state = {
+    players: [
+      {
+        name: "Jesica",
+        score: 0,
+        id: 1,
+      },
+      {
+        name: "David",
+        score: 0,
+        id: 2,
+      },
+      {
+        name: "Gauss",
+        score: 0,
+        id: 3,
+      },
+      {
+        name: "Amelie",
+        score: 0,
+        id: 4,
+      },
+      {
+        name: "Rex",
+        score: 0,
+        id: 5,
+      },
+    ],
+    
+  }
+
+  prevPlayerId = 5;
+  changeScore = (index, delta) => {
+    this.setState(prevState => ({    
+      score: prevState.players[index].score += delta, 
+    }));
+  }
+
+  addPlayer = (name) => {
+    this.setState(prevState => {
+     return {
+      players: [
+        ...prevState.players,
+        {
+          name,
+          score: 0,
+          id: this.prevPlayerId += 1,
+        },
+      ]
+     }
+    });
+  }
+  removePlayer = (id) => {
+    this.setState(prevState => ({
+      players: prevState.players.filter(p => p.id !== id),
+    }));
+  }
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+     <div className="scoreboard">
+       <Header 
+       title="Scoreboard" 
+       players={this.state.players} />
+       {/* Players List */}
+       {this.state.players.map((player, index) =>
+        <Player 
+        name={player.name}
+        score={player.score}  
+        id={player.id} 
+        key={player.id.toString()}
+        index={index}
+        changeScore={this.changeScore}
+        removePlayer={this.removePlayer} />
+       )}
+       <AddPlayerForm addPlayer={this.addPlayer}/>
+     </div>
     );
   }
 }
