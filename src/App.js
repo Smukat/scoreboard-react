@@ -6,8 +6,6 @@ import AddPlayerForm from './components/AddPlayerForm';
 import './App.css';
 
 
-
-
 class App extends Component {
   state = {
     players: [
@@ -69,9 +67,7 @@ class App extends Component {
   render() {
     return (
      <div className="scoreboard">
-       <Header 
-       title="Scoreboard" 
-       players={this.state.players} />
+       <Header players={this.state.players} />
        {/* Players List */}
        {this.state.players.map((player, index) =>
         <Player 
