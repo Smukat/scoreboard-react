@@ -26,8 +26,10 @@ const Stats = (props) => {
 
 Stats.propTypes = {
   players: PropTypes.arrayOf(PropTypes.shape({
-    score: PropTypes.number
-  })).isRequired
+    score: PropTypes.number,
+  })).isRequired,
+  
+
 };
 
 export default Stats;
