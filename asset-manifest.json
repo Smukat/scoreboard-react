@@ -1,13 +1,13 @@
 {
-  "main.css": "/scoreboard-react/static/css/main.d8f96e2d.chunk.css",
-  "main.js": "/scoreboard-react/static/js/main.8529e496.chunk.js",
-  "main.js.map": "/scoreboard-react/static/js/main.8529e496.chunk.js.map",
-  "static/js/1.23450888.chunk.js": "/scoreboard-react/static/js/1.23450888.chunk.js",
-  "static/js/1.23450888.chunk.js.map": "/scoreboard-react/static/js/1.23450888.chunk.js.map",
+  "main.css": "/scoreboard-react/static/css/main.f1b73302.chunk.css",
+  "main.js": "/scoreboard-react/static/js/main.2b26c5f1.chunk.js",
+  "main.js.map": "/scoreboard-react/static/js/main.2b26c5f1.chunk.js.map",
+  "static/js/1.412fd7da.chunk.js": "/scoreboard-react/static/js/1.412fd7da.chunk.js",
+  "static/js/1.412fd7da.chunk.js.map": "/scoreboard-react/static/js/1.412fd7da.chunk.js.map",
   "runtime~main.js": "/scoreboard-react/static/js/runtime~main.74c8782f.js",
   "runtime~main.js.map": "/scoreboard-react/static/js/runtime~main.74c8782f.js.map",
-  "static/css/main.d8f96e2d.chunk.css.map": "/scoreboard-react/static/css/main.d8f96e2d.chunk.css.map",
+  "static/css/main.f1b73302.chunk.css.map": "/scoreboard-react/static/css/main.f1b73302.chunk.css.map",
   "index.html": "/scoreboard-react/index.html",
-  "precache-manifest.2b70b7b7cbe106b444c0ba64a470e578.js": "/scoreboard-react/precache-manifest.2b70b7b7cbe106b444c0ba64a470e578.js",
+  "precache-manifest.d9e1e1767fee51119a794e167bb0d48c.js": "/scoreboard-react/precache-manifest.d9e1e1767fee51119a794e167bb0d48c.js",
   "service-worker.js": "/scoreboard-react/service-worker.js"
 }
