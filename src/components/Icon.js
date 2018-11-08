@@ -8,7 +8,7 @@ const Icon = (props) =>
   </svg>;
 
 Icon.propTypes = {
-  isHighScore: PropTypes.bool
+  highScore: PropTypes.bool
 };
 
 export default Icon;
